@@ -4,7 +4,7 @@ A personal portfolio application built natively for Apple Vision Pro using Swift
 
 ## Showcase Video
 
-[![Portfolio Showcase](Placeholder.jpg)](https://vimeo.com/1075860453/7ae129af4d?ts=0&share=copy)
+[![Portfolio Showcase](placeholder.jpg)](https://vimeo.com/1075860453/7ae129af4d?ts=0&share=copy)
 
 ## Technologies Used
 
@@ -23,13 +23,23 @@ A personal portfolio application built natively for Apple Vision Pro using Swift
 ## Project Structure
 
 The project follows a component-based architecture, separating features and reusable elements:
-YourPortfolioApp/
-├── YourPortfolioAppApp.swift # App Entry Point
-├── App/ # Core App Config (Window IDs)
-├── Data/ # Models & Data Source
-├── Features/ # App Screens (Hub, About, Contact)
-│ ├── Hub/
-│ ├── About/
-│ └── Contact/
-├── Utilities/ # Shared Components (FlowLayout, etc.)
-└── Assets.xcassets # Images
+
+🗂️ **YourPortfolioApp/**
+┣ 📄 YourPortfolioAppApp.swift       *# App Entry Point*
+┃
+┣ 📂 **App/**                      *# Core App Configuration*
+┃   ┗ 📄 WindowIdentifiers.swift   *# Defines Window IDs*
+┃
+┣ 📂 **Data/**                     *# Data Models & Sources*
+┃   ┣ 📄 PortfolioItem.swift       *# PortfolioItem model*
+┃   ┣ 📄 PageContent.swift         *# PageContent enum*
+┃   ┗ 📄 PortfolioData.swift       *# Source of portfolio items data*
+┃
+┣ 📂 **Features/**                 *# Main sections of the app*
+┃   ┣ 📂 Hub/                      *# Main Hub screen and its subviews*
+┃   ┣ 📂 About/                    *# About Me screen and its subviews*
+┃   ┗ 📂 Contact/                  *# Contact screen and its subviews*
+┃
+┣ 📂 **Utilities/**                *# Shared helper views/logic (e.g., FlowLayout)*
+┃
+┗ 🖼️ Assets.xcassets               *# Image assets*
