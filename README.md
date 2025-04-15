@@ -14,7 +14,7 @@ A personal portfolio application built natively for Apple Vision Pro using Swift
 
 ## Setup & Running
 
-1.  Clone this repository: `git clone <your-repo-url>`
+1.  Clone this repository: `git clone https://github.com/viachaslauhryniuk/visionOS-Portfolio-Hub.git`
 2.  Open the `Calc.xcodeproj` file in Xcode (version 15.2 or later recommended).
 3.  Ensure you have the visionOS SDK installed via Xcode.
 4.  Select a visionOS Simulator (or a connected Apple Vision Pro device).
