@@ -23,23 +23,31 @@ A personal portfolio application built natively for Apple Vision Pro using Swift
 ## Project Structure
 
 The project follows a component-based architecture, separating features and reusable elements:
-
-🗂️ **YourPortfolioApp/**
-┣ 📄 YourPortfolioAppApp.swift       *# App Entry Point*
-┃
-┣ 📂 **App/**                      *# Core App Configuration*
-┃   ┗ 📄 WindowIdentifiers.swift   *# Defines Window IDs*
-┃
-┣ 📂 **Data/**                     *# Data Models & Sources*
-┃   ┣ 📄 PortfolioItem.swift       *# PortfolioItem model*
-┃   ┣ 📄 PageContent.swift         *# PageContent enum*
-┃   ┗ 📄 PortfolioData.swift       *# Source of portfolio items data*
-┃
-┣ 📂 **Features/**                 *# Main sections of the app*
-┃   ┣ 📂 Hub/                      *# Main Hub screen and its subviews*
-┃   ┣ 📂 About/                    *# About Me screen and its subviews*
-┃   ┗ 📂 Contact/                  *# Contact screen and its subviews*
-┃
-┣ 📂 **Utilities/**                *# Shared helper views/logic (e.g., FlowLayout)*
-┃
-┗ 🖼️ Assets.xcassets               *# Image assets*
+```plaintext
+.
+├── App
+│   └── WindowIdentifiers.swift     # Core App Config (Window IDs)
+├── Assets.xcassets               # Images
+├── Data
+│   ├── PageContent.swift         # Models & Data Source
+│   ├── PortfolioData.swift
+│   └── PortfolioItem.swift
+├── Features
+│   ├── About                     # App Screens (Features)
+│   │   ├── AboutMeView.swift
+│   │   └── Subviews
+│   │       ├── ExperienceItemSimple.swift
+│   │       ├── LanguageBadge.swift
+│   │       ├── SectionView.swift
+│   │       └── SkillTags.swift
+│   ├── Contact
+│   │   ├── ContactButtonContent.swift
+│   │   └── ContactView.swift
+│   └── Hub
+│       ├── AvatarPageView.swift
+│       ├── HubView.swift
+│       ├── PaginationDots.swift
+│       └── PortfolioItemView.swift
+├── Utilities
+│   └── FlowLayout.swift            # Shared Components
+└── YourPortfolioAppApp.swift       # App Entry Point
